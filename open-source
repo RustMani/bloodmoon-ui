@@ -1,0 +1,195 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "Bloodmoon",Name = "Bloodmoon - V 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "BloodmoonUI"})
+
+--Main
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://12784360152",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "General"
+})
+
+Tab:AddButton({
+	Name = "Infinite Jump",
+	Callback = function()
+        loadstring(game:HttpGet(('https://gist.githubusercontent.com/RustMani/a5e29b86930c993a724bbc49fb5edc46/raw/aa87b567a8bc449d771fe1751d9b74f0d9457bbb/Script')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Kill",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  	end    
+})
+
+Tab:AddToggle({
+	Name = "Sprint (Kinda)",
+	Default = false,
+	Callback = function(SprintToggle_X)
+if SprintToggle_X == true then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+elseif SprintToggle_X == false then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end 
+end 
+})
+
+Tab:AddToggle({
+	Name = "Leap",
+	Default = false,
+	Callback = function(SprintToggle_X)
+if SprintToggle_X == true then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+elseif SprintToggle_X == false then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end 
+end
+})
+
+
+Tab:AddLabel("More WIP")
+
+--Special
+local Tab = Window:MakeTab({
+	Name = "Special",
+	Icon = "rbxassetid://12784363069",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+	Name = "Speed",
+	Min = 16,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(wsValue)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = wsValue
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Jump",
+	Min = 50,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(jValue)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = jValue
+	end    
+})
+
+Tab:AddParagraph("Health Things","NOTICE: Use at your own risk.")
+
+Tab:AddLabel("USE AT OWN RISK")
+
+Tab:AddSlider({
+	Name = "+Health",
+	Min = 100,
+	Max = 1000,
+	Default = 100,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(hValue)
+		game.Players.LocalPlayer.Character.Humanoid.Health = hValue
+	end    
+})
+
+Tab:AddParagraph("NOTICE","Changing this setting for the first time might result in the player dying.")
+Tab:AddLabel("Go Lower than 100.")
+
+Tab:AddSlider({
+	Name = "-Health",
+	Min = 1,
+	Max = 100,
+	Default = 100,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(lhValue)
+		game.Players.LocalPlayer.Character.Humanoid.Health = lhValue
+	end    
+})
+
+--Infinite Yield
+local Tab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://12784364769",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Infinite Yield"
+})
+
+Tab:AddButton({
+	Name = "Launch",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddParagraph("Infinite Yield Credits","Made by Edge.")
+
+--Dex
+local Tab = Window:MakeTab({
+	Name = "Dex",
+	Icon = "rbxassetid://12784362154",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Dex Explorer"
+})
+
+Tab:AddButton({
+	Name = "Launch",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+  	end    
+})
+
+Tab:AddParagraph("DarkDex Credits","Made by: Babyhamsta.")
+
+--Settings
+local Tab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://12784365597",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Kill UI",
+	Callback = function()
+        OrionLib:Destroy()
+  	end    
+})
+
+Tab:AddTextbox({
+	Name = "Custom Print",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(CustomPrintMessage)
+		print(CustomPrintMessage)
+	end	  
+})
+
+--Credits
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://12784361312",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Bloodmoon Credits","Library by: Shlexware! Scripted by: Kuadzo ")
+
+--Lib Stuff
+OrionLib:Init()
