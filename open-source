@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Bloodmoon",Name = "Bloodmoon - V 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "BloodmoonUI"})
+local Window = OrionLib:MakeWindow({IntroText = "Bloodmoon",Name = "Bloodmoon - V 1.0", HidePremium = false, SaveConfig = false, ConfigFolder = "bloodmoon-save"})
 
 --Main
 local Tab = Window:MakeTab({
