@@ -2,6 +2,6 @@ Original:
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/RustMani/bloodmoon-ui/main/open-source'))()
 
-Saving Version: (this saves configs)
+NS Version: (this doesn't saves configs)
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/RustMani/bloodmoon-ui/main/script-saving-version'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RustMani/bloodmoon-ui/main/script-ns-edition'))()
