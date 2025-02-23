@@ -25,6 +25,12 @@
 💬Discord: https://discord.gg/rJWsgJrt3X  
 🐤Twitter: https://twitter.com/kuadzo_
 
+### 🔍Upcoming
+
+• Script planned to have Key system.
+• Script planned to have RemoteSpy executable built in.
+* Script planned to use the Rayfield library.
+
 ## ❤️Made by Badger
 
 #### *I am not responsable for any bans or ruined friendships this script may cause. Use with caution*
