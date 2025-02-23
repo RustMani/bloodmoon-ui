@@ -25,6 +25,6 @@
 💬Discord: https://discord.gg/rJWsgJrt3X  
 🐤Twitter: https://twitter.com/kuadzo_
 
-## ❤️Made by Rust
+## ❤️Made by Badger
 
 #### *I am not responsable for any bans or ruined friendships this script may cause. Use with caution*
