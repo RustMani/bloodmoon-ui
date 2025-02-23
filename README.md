@@ -23,6 +23,6 @@
 💬Discord: https://discord.gg/rJWsgJrt3X  
 🐤Twitter: https://twitter.com/kuadzo_
 
-## ❤️Made by Kuadzo
+## ❤️Made by Rust
 
 #### *I am not responsable for any bans or ruined friendships this script may cause. Use with caution*
