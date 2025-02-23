@@ -14,6 +14,8 @@
 🎉Thats right! BloodmoonUI is back and just the same as it was before!  
 😴No really, It's the same as it was before. No changes were made.
 
+🦺Script NS Edition is a version that does not save configs to your PC.
+
 📗Thanks to Shlexware for the Library!  
 🍕Huge Thanks to pizzaboxer for Bloxstrap!  
 
