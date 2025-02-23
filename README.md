@@ -29,7 +29,7 @@
 
 • Script planned to have Key system.  
 • Script planned to have RemoteSpy executable built in. 
-* Script planned to use the Rayfield library.
+* Script planned to use the Rayfield library.  
 
 ## ❤️Made by Badger
 
